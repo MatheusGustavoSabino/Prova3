@@ -17,7 +17,11 @@ int main(void) {
   pegaMaximoMinimo(inteiros, &maximo, &minimo, qtdInteiros);
 
   for(int i = 0; i < qtdInteiros; i++){
-    printf("%d,", inteiros[i]);
+    printf("%d", inteiros[i]);
+
+    if(i < (qtdInteiros - 1 )){
+      printf(",");
+    }
   }
   printf("\nMax=%d, min=%d", maximo, minimo);
 }

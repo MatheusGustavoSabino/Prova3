@@ -4,8 +4,9 @@
 int main(void) {
   int qtdInteiros;
   int inteiros[50];
+  printf("Escreva o tamanho do vetor: ");
   scanf("%d", &qtdInteiros);
-
+  printf("Escreva uma cadeia com os numeros inteiros:\n");
   for(int i = 0; i < qtdInteiros; i++){
     scanf("%d", &inteiros[i]);
   }
